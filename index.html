@@ -5,13 +5,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fruit Brust</title>
+    <!-- tailwind cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- css -->
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+
+        }
+    </style>
 </head>
 
 <body>
-    <header>
-        <h1>this is heading file</h1>
+    <header class="w-11/12 mx-auto">
+
+        <!-- nav section -->
+        <div
+            class=" navbar md:bg-[#F85559] rounded-full lg:text-white justify-between flex flex-row-reverse md:flex-row">
+            <div class="navbar-left">
+                <div class="dropdown">
+                    <label tabindex="0" class="btn btn-ghost lg:hidden mr-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 25"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </label>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3  z-[1] p-2 shadow bg-base-100 rounded-box w-20 ">
+                        <li><a class="text-lg font-medium">Home</a></li>
+                        <li><a class="text-lg font-medium">About</a></li>
+                        <li><a class="text-lg font-medium">Shop</a></li>
+                        <li><a class="text-lg font-medium">Fruits</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class=" hidden lg:flex flex-1">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a class="text-lg font-medium">Home</a></li>
+                    <li><a class="text-lg font-medium">About Us</a></li>
+                    <li><a class="text-lg font-medium">Shop</a></li>
+                    <li><a class="text-lg font-medium">All Fruits</a></li>
+                </ul>
+            </div>
+            <div>
+                <a class="normal-case text-xl flex-1 flex items-center ">
+                    <img class="md:w-[45px] mr-2" src="./images/logo.png" alt="">
+                    <h1 class=" md:text-4xl font-[700]"> Fruit Brust</h1>
+                </a>
+
+            </div>
+            <div class="flex-1 navbar-end hidden lg:flex">
+                <form action="#" class="bg-white rounded-full pl-6 pr-3 py-1 mr-3 ">
+                    <input class="outline-none" type="search" placeholder="Search here">
+                    <button><i class="fa-solid fa-magnifying-glass text-black"></i></button>
+                </form>
+            </div>
+        </div>
     </header>
-    <main>
+    <main class="container mx-auto">
 
     </main>
     <footer>
