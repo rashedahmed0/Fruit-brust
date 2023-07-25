@@ -8,6 +8,18 @@
     <!-- tailwind cdn -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        "banner-linear-gradient": 'bg-gradient-to-t from-black to-blue-500',
+                    }
+                }
+            }
+        }
+    </script>
     <!-- google font  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,7 +40,7 @@
 </head>
 
 <body>
-    <header class="w-11/12 mx-auto">
+    <header class=" container m-auto">
 
         <!-- nav section -->
         <div
@@ -74,8 +86,111 @@
             </div>
         </div>
     </header>
-    <main class="container mx-auto">
 
+
+    <main class="container mx-auto">
+        <!-- banner section -->
+        <!-- banner top -->
+        <section class="banner-top ">
+            <div class="banner mb-[50px] md:mt-[50px] mt-[10px] w-11/12 mx-auto">
+                <div class="carousel w-full">
+                    <div id="slide1" class="carousel-item relative w-full ">
+
+                        <div class="">
+                            <img src="./images/Rectangle 4.png " class="absolute" alt="">
+                            <div class="absolute inset-x-[15%]  text-white md:block md:top-5 py-5 text-center ">
+                                <h1 class="lg:text-6xl lg:font-extrabold text-[17px] font-[800] ">Exotic tastes at your
+                                    <br>
+                                    doorstep
+                                </h1>
+                                <p class="lg:text-xl lg:font-medium lg:py-4 text-[14px] mt-1 mb-2">We supply highly
+                                    quality
+                                    organic
+                                    products</p>
+                                <button class="py-1 px-3 rounded-[5px] text-white border-[#F85559] bg-[#F85559]">Shop
+                                    Now</button>
+                            </div>
+
+                            <img src="./images/banner1.png" class="w-full" />
+                        </div>
+                        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                            <a href="#slide4" class="btn btn-circle w-5 md:w-[50px]">❮</a>
+                            <a href="#slide2" class="btn btn-circle w-5 md:w-[50px]">❯</a>
+                        </div>
+                    </div>
+                    <div id="slide2" class="carousel-item relative w-full">
+
+                        <div class="">
+                            <img src="./images/Rectangle 4.png " class="absolute" alt="">
+                            <div class="absolute inset-x-[15%]  text-white md:block md:top-5 py-5 text-center ">
+                                <h1 class="lg:text-6xl lg:font-extrabold text-[17px] font-[800] ">Exotic tastes at your
+                                    <br>
+                                    doorstep
+                                </h1>
+                                <p class="lg:text-xl lg:font-medium lg:py-4 text-[14px] mt-1 mb-2">We supply highly
+                                    quality
+                                    organic
+                                    products</p>
+                                <button class="py-1 px-3 rounded-[5px] text-white border-[#F85559] bg-[#F85559]">Shop
+                                    Now</button>
+                            </div>
+                            <img src="./images/banner2.png" class="w-full" />
+                        </div>
+                        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                            <a href="#slide1" class="btn btn-circle w-5 md:w-[50px]">❮</a>
+                            <a href="#slide3" class="btn btn-circle w-5 md:w-[50px]">❯</a>
+                        </div>
+                    </div>
+                    <div id="slide3" class="carousel-item relative w-full">
+
+                        <div class="">
+                            <img src="./images/Rectangle 4.png " class="absolute" alt="">
+                            <div class="absolute inset-x-[15%]  text-white md:block md:top-5 py-5 text-center ">
+                                <h1 class="lg:text-6xl lg:font-extrabold text-[17px] font-[800] ">Exotic tastes at your
+                                    <br>
+                                    doorstep
+                                </h1>
+                                <p class="lg:text-xl lg:font-medium lg:py-4 text-[14px] mt-1 mb-2">We supply highly
+                                    quality
+                                    organic
+                                    products</p>
+                                <button class="py-1 px-3 rounded-[5px] text-white border-[#F85559] bg-[#F85559]">Shop
+                                    Now</button>
+                            </div>
+                            <img src="./images/banner3.png" class="w-full " />
+                        </div>
+                        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                            <a href="#slide2" class="btn btn-circle w-5 md:w-[50px]">❮</a>
+                            <a href="#slide4" class="btn btn-circle w-5 md:w-[50px]">❯</a>
+                        </div>
+                    </div>
+                    <div id="slide4" class="carousel-item relative w-full">
+                        <div class="">
+                            <img src="./images/Rectangle 4.png " class="absolute" alt="">
+                            <div class="absolute inset-x-[15%]  text-white md:block md:top-5 py-5 text-center ">
+                                <h1 class="lg:text-6xl lg:font-extrabold text-[0.9rem] font-[800] ">Exotic tastes at
+                                    your
+                                    <br>
+                                    doorstep
+                                </h1>
+                                <p class="lg:text-xl lg:font-medium lg:py-4 text-[0.6rem] mt-1 mb-2">We supply highly
+                                    quality
+                                    organic
+                                    products</p>
+                                <button
+                                    class="py-1 px-3 rounded-[5px] text-[0.5rem] text-white border-[#F85559] bg-[#F85559]">Shop
+                                    Now</button>
+                            </div>
+                            <img src="./images/banner4.png" class="w-full" />
+                        </div>
+                        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                            <a href="#slide3" class="btn btn-circle w-5 md:w-[50px]">❮</a>
+                            <a href="#slide1" class="btn btn-circle w-5 md:w-[50px]">❯</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
 
